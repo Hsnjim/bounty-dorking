@@ -1,14 +1,17 @@
 # bounty-dorking
 
-# Descirption
+# Description
 This collection of dorkings is essential for any security researcher performing bug bounty, as it offers a rich and updated library of specialized search queries, which allow to identify quickly and efficiently potential vulnerabilities, hidden entry points, and unprotected sensitive information on the Web.
+
+# Good to know before
+It's important to note that the domain "jim.com" is used here merely as an example to illustrate how these dorking queries can be formatted. When you're using these queries for your own bug bounty endeavors, be sure to replace "jim.com" with the domain of the website you're investigating. These queries are powerful tools for identifying potential vulnerabilities and enhancing your site's security. Remember, responsible and ethical use of these techniques is crucial in maintaining integrity and trust on the web.
 
 # Bug Bounty Dorkings
 
 ## PHP extension w/ parameters
 site:jim.com ext:php inurl:?
 
-graphql
+ 
  
 ## Disclosed XSS and Open Redirects
 site:openbugbounty.org inurl:reports intext:"jim.com"
@@ -42,6 +45,68 @@ site:s3.dualstack.us-east-1.amazonaws.com "jim.com"
 site:dropbox.com/s "jim.com"
 site:box.com/s "jim.com"
 site:docs.google.com inurl:"/d/" "jim.com"
+
+
+### Unsecured API parameters:
+
+inurl:apikey | inurl:clientId | inurl:client_secret | inurl:access_token site:jim.com
+
+
+
+### Sites exposing debug information:
+
+site:jim.com inurl:debug | inurl:test | inurl:log
+
+ 
+ 
+
+### Search for possible subdomains:
+
+site:*.jim.com
+
+ 
+ 
+
+### Admin pages:
+
+site:jim.com inurl:admin | inurl:login | inurl:dashboard
+
+ 
+ 
+
+### Exposed database engines:
+
+site:jim.com inurl:phpmyadmin | inurl:phppgadmin | inurl:myadmin | inurl:mysqladmin
+
+ 
+ 
+
+### Exposed configuration files:
+
+site:jim.com ext:yml | ext:yaml | ext:toml | ext:json | ext:xml
+
+ 
+ 
+
+### Content Management Systems (CMS):
+
+- For WordPress:
+
+site:jim.com inurl:wp-login | inurl:wp-admin
+
+ 
+ 
+
+- For Joomla:
+
+site:jim.com inurl:administrator
+
+ 
+ 
+
+- For Drupal:
+
+site:jim.com inurl:user/login
 
  
  
