@@ -4,9 +4,9 @@
 This collection of dorkings is essential for any security researcher performing bug bounty, as it offers a rich and updated library of specialized search queries, which allow to identify quickly and efficiently potential vulnerabilities, hidden entry points, and unprotected sensitive information on the Web.
 
 # Good to know before
-|-----------------|
+
 | It's important to note that the domain "jim.com" is used here merely as an example to illustrate how these dorking queries can be formatted. When you're using these queries for your own bug bounty endeavors, be sure to replace "jim.com" with the domain of the website you're investigating. These queries are powerful tools for identifying potential vulnerabilities and enhancing your site's security. Remember, responsible and ethical use of these techniques is crucial in maintaining integrity and trust on the web. |
-|-----------------|
+
 
 # Bug Bounty Dorkings
 
