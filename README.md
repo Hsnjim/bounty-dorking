@@ -169,3 +169,7 @@ inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"jim.co
  
 ## File upload endpoints
 site:jim.com ”choose file”
+
+
+# Additional Resources
+`https://taksec.github.io/google-dorks-bug-bounty/`
